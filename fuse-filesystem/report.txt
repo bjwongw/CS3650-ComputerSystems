@@ -1,0 +1,33 @@
+CS 3650 - Computer Systems
+HW12 - FUSE File System
+
+Partners: Brendon Wong and Joe Moore
+Our submissions are identical in both code and this report
+
+1. What advantages and drawbacks does it have? How would you improve it if you
+had more time?
+
+    Advantages:
+        We basically implmeneted the ext file system with hierarchical design.
+    We're easily able to implement several step 2 features and programmed
+    nicely to interfaces that kept most things clean and organized.
+    
+    Drawbacks:
+        There is a lot of jumping arond and probably inefficient functions
+    that could be simplified. We are limited to the number of files/
+    directories that we can support, and not just because of the 1MB
+    limitation. If we were to implement the >4K files, we would most
+    likely have fragmented data around the file system.
+
+    Improvements:
+        We would like to support more metadata and larger files. It'd be
+    nice to optimize our directory searches and lookups. We did a fairly
+    brute-force method of achieving this.
+
+2. What features did you complete? What is still missing? Did you implement
+any additional functionality that wasn't required?
+
+    We completed all of the step 1 features, as well as hard links, creating,
+    deleting, and nesting directories, getting and updating timestamps.
+
+    We're just missing reading/writing offsets and large files/directories.
